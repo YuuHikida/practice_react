@@ -1,10 +1,21 @@
+import { ColorfulMessage } from "./components/ColorfulMessage";
+
 // componentNameは最初は大文字にする(大文字のパスカルケースにしないと読み込まない)
 export const App = () => {
+  const onClickButton = () => alert();
+
+  const contentStyleB = {
+    color: "blue",
+    fontSize: "18px",
+  };
+
   return (
     // <React.Fragment>
     <>
-      <h1>こん^^</h1>
-      <p>お元気ですかぁ？</p>
+      <h1 style={{ color: "red" }}>こん^^</h1>
+      <ColorfulMessage color="blue" message="お元気ですかぁ？" />
+      <ColorfulMessage color="green" message="はい、元気です" />
+      <button onClick={onClickButton}>button</button>
     </>
   );
 };
