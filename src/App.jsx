@@ -1,4 +1,4 @@
-// componentNameは最初は大文字にする
+// componentNameは最初は大文字にする(大文字のパスカルケースにしないと読み込まない)
 export const App = () => {
   return (
     // <React.Fragment>
