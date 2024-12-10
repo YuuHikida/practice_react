@@ -13,8 +13,9 @@ export const App = () => {
     // <React.Fragment>
     <>
       <h1 style={{ color: "red" }}>こん^^</h1>
-      <ColorfulMessage color="blue" message="お元気ですかぁ？" />
-      <ColorfulMessage color="green" message="はい、元気です" />
+      <ColorfulMessage color="blue">お元気ですかぁ？</ColorfulMessage>
+      <ColorfulMessage color="green">はい、元気です</ColorfulMessage>
+      {/* <ColorfulMessage color="green" message="はい、元気です" /> */}
       <button onClick={onClickButton}>button</button>
     </>
   );
