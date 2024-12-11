@@ -5,12 +5,9 @@ import { ColorfulMessage } from "./components/ColorfulMessage";
 export const App = () => {
   const [num, setNum] = useState(0);
   const onClickCountUp = () => {
-    setNum(111);
-  };
-
-  const contentStyleB = {
-    color: "blue",
-    fontSize: "18px",
+    setNum((prev) => prev + 1);
+    setNum((prev) => prev + 1);
+    //setNum(num + 1);  //レンダリング後に上から関数を再度読み込むのでuseState(0)が評価され左の(num+1)を複数用意しても増減しない
   };
 
   return (
